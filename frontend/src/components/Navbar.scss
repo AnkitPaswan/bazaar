@@ -48,7 +48,8 @@
                 cursor: pointer;
 
                 @include md {
-                    width: 80px;
+                    // width: 80px;
+                    width: 50px;
                 }
             }
         }

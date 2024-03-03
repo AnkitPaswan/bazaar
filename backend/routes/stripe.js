@@ -82,18 +82,6 @@ router.post('/', async (req, res) => {
 
     });
     res.json({ id: session.id })
-
-    // stripe.charges.create({
-    //     source: req.body.tokenId,
-    //     amount: req.body.amount,
-    //     currency: "usd",
-    // }, (stripeErr, stripeRes) => {
-    //     if (stripeErr) {
-    //         re.status(500).json(stripeErr);
-    //     } else {
-    //         res.status(200).json(stripeRes);
-    //     }
-    // })
 })
 
 module.exports = router;

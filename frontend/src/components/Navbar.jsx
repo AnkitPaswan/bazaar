@@ -18,12 +18,14 @@ const Navbar = () => {
       <header className="main-header">
         <div className="header-content">
           <ul className="left">
-            <li>EN</li>
+            <img src="https://i.imgur.com/GShsveM.jpg" alt="" />
+            {/* <li>EN</li>
             <input type="text" id="fname" name="fname" placeholder="Search"></input>
-            <Search />
+            <Search /> */}
           </ul>
           <div className="center" onClick={() => navigate("/")}>BAZAAR</div>
           <div className="right">
+            <li> <Search /></li>
             <li onClick={() => navigate("/register")}>REGISTER</li>
             {user ? <li>LOGOUT</li> : <li onClick={() => navigate("/login")}>LOGIN</li>}
             <span className="cart-icon" onClick={() => navigate("/cart")}>
